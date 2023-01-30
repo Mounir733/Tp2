@@ -146,6 +146,7 @@ namespace ClientConvertisseurV1.Views
             noDevise.XamlRoot = this.Content.XamlRoot;
             await noDevise.ShowAsync();
         }
+        // cei est un test
         private async void DisplayNoAPI()
         { 
             ContentDialog noAPI = new ContentDialog
