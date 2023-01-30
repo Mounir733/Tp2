@@ -147,7 +147,7 @@ namespace ClientConvertisseurV1.Views
             await noDevise.ShowAsync();
         }
         private async void DisplayNoAPI()
-        {
+        { 
             ContentDialog noAPI = new ContentDialog
             {
                 Title = "Erreur",
