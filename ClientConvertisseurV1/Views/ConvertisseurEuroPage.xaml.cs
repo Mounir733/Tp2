@@ -105,17 +105,16 @@ namespace ClientConvertisseurV1.Views
             WSService service = new WSService("https://localhost:7032/api/"); 
             List<Devise> result = await service.GetDevisesAsync("devises"); 
             if (result == null)
-                MessageAsync("API non disponible !", "Erreur");
+            {
+                DisplayNoAPI();
+            }
+
             else   
                 Devises = new ObservableCollection<Devise>(result);
 
             
         }
 
-        private void MessageAsync(string v1, string v2)
-        {
-            throw new NotImplementedException();
-        }
         protected void OnPropertyChanged(string name)
         {
             PropertyChangedEventHandler handler = PropertyChanged;
@@ -126,8 +125,38 @@ namespace ClientConvertisseurV1.Views
         }
         private void BtnConvertir_Click(object sender, RoutedEventArgs e)
         {
-            WSService service = new WSService("https://localhost:7032/api/");
-            MontantResult = service.CalculMontant(DeviseSelected, Montant);
+            if (DeviseSelected == null)
+                DisplayNoDevise();
+            else
+            {
+                WSService service = new WSService("https://localhost:7032/api/");
+                MontantResult = service.CalculMontant(DeviseSelected, Montant);
+            }
+        }
+
+        private async void DisplayNoDevise()
+        {
+            ContentDialog noDevise = new ContentDialog
+            {
+                Title = "Erreur",
+                Content = "Vous n'avez pas selectionné de devise.",
+                CloseButtonText = "Ok"
+            };
+
+            noDevise.XamlRoot = this.Content.XamlRoot;
+            await noDevise.ShowAsync();
+        }
+        private async void DisplayNoAPI()
+        {
+            ContentDialog noAPI = new ContentDialog
+            {
+                Title = "Erreur",
+                Content = "API non disponible !",
+                CloseButtonText = "Ok"
+            };
+
+            noAPI.XamlRoot = this.Content.XamlRoot;
+            await noAPI.ShowAsync();
         }
     }
 }
