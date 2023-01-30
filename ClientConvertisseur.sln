@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientConvertisseurV1", "ClientConvertisseurV1\ClientConvertisseurV1.csproj", "{3E76A33A-829D-497F-961F-FD4087CB47FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientConvertisseurV1", "ClientConvertisseurV1\ClientConvertisseurV1.csproj", "{3E76A33A-829D-497F-961F-FD4087CB47FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientConvertisseurV2", "ClientConvertisseurV2\ClientConvertisseurV2.csproj", "{CBDFFCE4-3EA4-4F57-920A-5DC8C29D1AC1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,24 @@ Global
 		{3E76A33A-829D-497F-961F-FD4087CB47FB}.Release|x86.ActiveCfg = Release|x86
 		{3E76A33A-829D-497F-961F-FD4087CB47FB}.Release|x86.Build.0 = Release|x86
 		{3E76A33A-829D-497F-961F-FD4087CB47FB}.Release|x86.Deploy.0 = Release|x86
+		{CBDFFCE4-3EA4-4F57-920A-5DC8C29D1AC1}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{CBDFFCE4-3EA4-4F57-920A-5DC8C29D1AC1}.Debug|ARM64.Build.0 = Debug|ARM64
+		{CBDFFCE4-3EA4-4F57-920A-5DC8C29D1AC1}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{CBDFFCE4-3EA4-4F57-920A-5DC8C29D1AC1}.Debug|x64.ActiveCfg = Debug|x64
+		{CBDFFCE4-3EA4-4F57-920A-5DC8C29D1AC1}.Debug|x64.Build.0 = Debug|x64
+		{CBDFFCE4-3EA4-4F57-920A-5DC8C29D1AC1}.Debug|x64.Deploy.0 = Debug|x64
+		{CBDFFCE4-3EA4-4F57-920A-5DC8C29D1AC1}.Debug|x86.ActiveCfg = Debug|x86
+		{CBDFFCE4-3EA4-4F57-920A-5DC8C29D1AC1}.Debug|x86.Build.0 = Debug|x86
+		{CBDFFCE4-3EA4-4F57-920A-5DC8C29D1AC1}.Debug|x86.Deploy.0 = Debug|x86
+		{CBDFFCE4-3EA4-4F57-920A-5DC8C29D1AC1}.Release|ARM64.ActiveCfg = Release|ARM64
+		{CBDFFCE4-3EA4-4F57-920A-5DC8C29D1AC1}.Release|ARM64.Build.0 = Release|ARM64
+		{CBDFFCE4-3EA4-4F57-920A-5DC8C29D1AC1}.Release|ARM64.Deploy.0 = Release|ARM64
+		{CBDFFCE4-3EA4-4F57-920A-5DC8C29D1AC1}.Release|x64.ActiveCfg = Release|x64
+		{CBDFFCE4-3EA4-4F57-920A-5DC8C29D1AC1}.Release|x64.Build.0 = Release|x64
+		{CBDFFCE4-3EA4-4F57-920A-5DC8C29D1AC1}.Release|x64.Deploy.0 = Release|x64
+		{CBDFFCE4-3EA4-4F57-920A-5DC8C29D1AC1}.Release|x86.ActiveCfg = Release|x86
+		{CBDFFCE4-3EA4-4F57-920A-5DC8C29D1AC1}.Release|x86.Build.0 = Release|x86
+		{CBDFFCE4-3EA4-4F57-920A-5DC8C29D1AC1}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
